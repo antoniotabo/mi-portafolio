@@ -1,13 +1,13 @@
 :root {
     /* Paleta de Colores "Tech Engineering" */
-    --bg-main: #0b0f19;       /* Fondo muy oscuro */
-    --bg-secondary: #111827;  /* Fondo tarjetas */
-    --primary: #3b82f6;       /* Azul ingeniería */
-    --accent: #06b6d4;        /* Cian brillante */
-    --text-main: #f3f4f6;     /* Blanco suave */
-    --text-muted: #9ca3af;    /* Gris texto */
-    --border: #1f2937;        /* Bordes sutiles */
-    
+    --bg-main: #0b0f19;       
+    --bg-secondary: #111827;  
+    --primary: #3b82f6;       
+    --primary-hover: #2563eb;
+    --accent: #06b6d4;        
+    --text-main: #f3f4f6;     
+    --text-muted: #9ca3af;    
+    --border: #1f2937;        
     --font-main: 'Inter', sans-serif;
 }
 
@@ -25,6 +25,10 @@ body {
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Utilidades */
 .container {
     max-width: 1100px;
@@ -39,15 +43,16 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+/* AUMENTADO: Padding para que las secciones no estén pegadas */
 .section {
-    padding: 80px 0;
+    padding: 100px 0; 
 }
 
 .section-title {
-    font-size: 2rem;
-    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
     text-align: center;
-    position: relative;
+    font-weight: 800;
 }
 
 /* Navbar */
@@ -99,7 +104,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 60px;
+    padding-top: 80px;
 }
 
 .hero-grid {
@@ -138,12 +143,17 @@ body {
 .btn-primary, .btn-outline {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     padding: 12px 24px;
     border-radius: 8px;
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: var(--font-main);
 }
 
 .btn-primary {
@@ -152,8 +162,9 @@ body {
 }
 
 .btn-primary:hover {
-    background: #2563eb;
+    background: var(--primary-hover);
     transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
 }
 
 .btn-outline {
@@ -167,7 +178,7 @@ body {
     color: var(--primary);
 }
 
-/* Code Block Visual */
+/* Code Block */
 .code-block {
     background: #1e293b;
     border-radius: 12px;
@@ -242,11 +253,57 @@ pre {
 /* Proyecto Section */
 .bg-darker { background: #080b12; }
 
+.project-showcase {
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    margin-bottom: 4rem; /* AUMENTADO: Espacio entre foto y texto */
+    overflow: hidden; 
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.project-showcase:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+}
+
+.browser-header {
+    background: #1e293b;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid var(--border);
+}
+
+.browser-address {
+    background: rgba(0, 0, 0, 0.3);
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    padding: 4px 15px;
+    border-radius: 4px;
+    margin-left: 15px;
+    font-family: monospace;
+    width: 100%;
+    max-width: 300px;
+}
+
+.project-showcase img {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0.9;
+    transition: opacity 0.3s;
+}
+
+.project-showcase:hover img { opacity: 1; }
+
 .project-layout {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     gap: 4rem;
-    align-items: center;
+    align-items: start;
 }
 
 .features-list {
@@ -284,38 +341,120 @@ pre {
 .tech-label { color: var(--text-muted); }
 .tech-value { color: var(--primary); font-weight: 600; }
 
-/* Footer */
-footer {
-    background: var(--bg-secondary);
-    padding: 4rem 0 2rem;
-    border-top: 1px solid var(--border);
+/* === SECCIÓN DE CONTACTO Y FORMULARIO (NUEVO) === */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
 }
 
-.footer-content {
+.info-items {
+    margin: 2rem 0;
+}
+
+.info-item {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 2rem;
+    gap: 15px;
+    margin-bottom: 1rem;
+    color: var(--text-muted);
+    font-size: 1.1rem;
 }
 
-.social-link {
+.info-item i {
+    color: var(--primary);
+    font-size: 1.5rem;
+}
+
+.social-links-row {
+    display: flex;
+    gap: 15px;
+}
+
+.social-btn {
+    width: 45px;
+    height: 45px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--text-main);
     font-size: 1.5rem;
-    margin-left: 20px;
-    transition: color 0.3s;
+    transition: all 0.3s ease;
+    text-decoration: none;
 }
 
-.social-link:hover { color: var(--accent); }
+.social-btn:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Estilos del Formulario */
+.contact-form-wrapper {
+    background: var(--bg-secondary);
+    padding: 2.5rem;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-main);
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    background: var(--bg-main);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text-main);
+    font-family: var(--font-main);
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.full-width {
+    width: 100%;
+}
+
+/* Footer Simple */
+footer {
+    padding: 2rem 0;
+    border-top: 1px solid var(--border);
+    margin-top: 0; /* Ya no necesitamos margen grande porque hay padding en secciones */
+}
 
 .copyright {
     text-align: center;
     color: var(--text-muted);
-    font-size: 0.85rem;
-    border-top: 1px solid var(--border);
-    padding-top: 2rem;
+    font-size: 0.9rem;
 }
 
 /* Mobile Responsiveness */
+@media (max-width: 900px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 768px) {
     .hero-grid, .project-layout {
         grid-template-columns: 1fr;
@@ -323,16 +462,14 @@ footer {
     
     .hero {
         text-align: center;
-        padding-top: 100px;
+        padding-top: 120px;
     }
 
     .hero-text h1 { font-size: 2.5rem; }
     
-    .cta-group {
-        justify-content: center;
-    }
+    .cta-group { justify-content: center; }
 
-    .code-block { display: none; } /* Ocultar código visual en móvil */
+    .code-block { display: none; }
     
-    .nav-links { display: none; } /* En una versión real agregarías menú hamburguesa */
+    .nav-links { display: none; }
 }
