@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jefferson Arriola | Portafolio de Ingeniería</title>
+    <meta name="description" content="Portafolio de Jefferson Antonio Arriola Reyes, estudiante de Ingeniería de Sistemas (UNU). Desarrollador Full Stack y Arquitecto de Software.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">JAR<span>.dev</span></a>
+            <ul class="nav-links">
+                <li><a href="#perfil">Perfil</a></li>
+                <li><a href="#stack">Tecnologías</a></li>
+                <li><a href="#proyecto">ERP System</a></li>
+                <li><a href="#contacto" class="btn-contact">Contactar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <span class="badge">Ingeniería de Sistemas - VIII Ciclo</span>
+                <h1>Jefferson Antonio <br> <span class="text-gradient">Arriola Reyes</span></h1>
+                <p class="hero-subtitle">
+                    Estudiante de la <strong>Universidad Nacional de Ucayali</strong>. 
+                    Especializado en el diseño de arquitecturas de software escalables, 
+                    optimización de bases de datos y desarrollo de soluciones integrales para la industria.
+                </p>
+                <div class="cta-group">
+                    <a href="#proyecto" class="btn-primary">Ver Ingeniería Aplicada</a>
+                    <a href="https://github.com/" target="_blank" class="btn-outline">
+                        <i class="ph ph-github-logo"></i> GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <pre><code><span class="keyword">class</span> <span class="class-name">SystemsEngineer</span> {
+  <span class="keyword">constructor</span>() {
+    <span class="this">this</span>.university = <span class="string">"UNU"</span>;
+    <span class="this">this</span>.cycle = <span class="number">8</span>;
+    <span class="this">this</span>.focus = [<span class="string">"Backend"</span>, <span class="string">"DB Architecture"</span>];
+  }
+  
+  <span class="function">solveProblem</span>(complexity) {
+    <span class="return">return</span> <span class="string">"Optimized Solution"</span>;
+  }
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="stack" class="section">
+        <div class="container">
+            <h2 class="section-title">Arsenal Tecnológico</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="ph ph-database icon-accent"></i>
+                    <h3>Base de Datos Avanzada</h3>
+                    <p>Diseño relacional en MySQL 8.0. Implementación de lógica de negocio mediante Triggers, Vistas Materializadas y Columnas Generadas.</p>
+                    <div class="tags">
+                        <span>MySQL</span><span>Stored Procedures</span><span>JSON Audit</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="ph ph-brackets-curly icon-accent"></i>
+                    <h3>Desarrollo Backend</h3>
+                    <p>Creación de APIs RESTful robustas y seguras. Manejo de autenticación, middleware y conexión eficiente a datos.</p>
+                    <div class="tags">
+                        <span>Node.js</span><span>Express</span><span>JWT</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="ph ph-browsers icon-accent"></i>
+                    <h3>Frontend Moderno</h3>
+                    <p>Desarrollo de interfaces reactivas y modulares, enfocadas en la experiencia de usuario (UX) y el consumo eficiente de datos.</p>
+                    <div class="tags">
+                        <span>Angular</span><span>TypeScript</span><span>RxJS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyecto" class="section bg-darker">
+        <div class="container">
+            <h2 class="section-title">Caso de Estudio: <span class="text-gradient">ERP Maderero Industrial</span></h2>
+            <div class="project-layout">
+                <div class="project-info">
+                    <h3>Arquitectura de Sistema de Gestión Integral</h3>
+                    <p>
+                        Desarrollo de un sistema ERP para solucionar la complejidad logística y financiera de la industria maderera. 
+                        El sistema gestiona desde la adquisición de materia prima hasta la transformación y facturación.
+                    </p>
+                    
+                    <ul class="features-list">
+                        <li>
+                            <i class="ph ph-check-circle"></i>
+                            <div>
+                                <strong>Inventario en Tiempo Real:</strong> 
+                                Implementación de Vistas SQL (<code>v_stock_real</code>) que calculan el stock dinámicamente (Entradas - Salidas) sin redundancia de datos.
+                            </div>
+                        </li>
+                        <li>
+                            <i class="ph ph-check-circle"></i>
+                            <div>
+                                <strong>Integridad Financiera:</strong> 
+                                Uso de columnas generadas para cálculos inmutables de impuestos (IGV, Detracciones) y saldos pendientes en la base de datos.
+                            </div>
+                        </li>
+                        <li>
+                            <i class="ph ph-check-circle"></i>
+                            <div>
+                                <strong>Auditoría Forense:</strong> 
+                                Sistema de seguridad que registra cambios en formato JSON (<code>diff_json</code>) para trazabilidad completa de usuarios.
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn-outline small">Ver Repositorio</a>
+                </div>
+                <div class="project-tech">
+                    <div class="tech-item">
+                        <span class="tech-label">Base de Datos</span>
+                        <span class="tech-value">MySQL 8.0</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-label">Lógica</span>
+                        <span class="tech-value">Stored Procedures</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-label">Seguridad</span>
+                        <span class="tech-value">JSON Audit Logs</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-label">Frontend</span>
+                        <span class="tech-value">Angular</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <h3>Jefferson A. Arriola Reyes</h3>
+                <p>Estudiante de Ingeniería de Sistemas - UNU</p>
+                <p class="location"><i class="ph ph-map-pin"></i> Pucallpa, Perú</p>
+            </div>
+            <div class="footer-right">
+                <a href="mailto:tuemail@ejemplo.com" class="social-link"><i class="ph ph-envelope"></i></a>
+                <a href="https://linkedin.com/in/tu-usuario" class="social-link"><i class="ph ph-linkedin-logo"></i></a>
+                <a href="https://github.com/tu-usuario" class="social-link"><i class="ph ph-github-logo"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Jefferson Arriola. Todos los derechos reservados.
+        </div>
+    </footer>
+
+</body>
+</html>
