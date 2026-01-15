@@ -15,7 +15,7 @@ Este proyecto aloja el código fuente de mi portafolio profesional en línea. El
 El sitio fue construido desde cero (Vanilla) para garantizar un rendimiento óptimo (Lighthouse Score 100%) y demostrar un dominio sólido de los estándares web actuales sin la sobrecarga de frameworks innecesarios.
 
 ### 🔗 [https://antoniotabo.github.io/mi-portafolio/]
-*(Reemplaza el enlace de arriba una vez actives GitHub Pages)*
+
 
 ---
 
