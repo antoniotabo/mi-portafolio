@@ -51,3 +51,19 @@ Este no es solo un sitio estático; es una implementación técnica de diseño m
 ├── style.css         # Hoja de estilos (Variables, Grid, Responsive)
 ├── assets/           # Imágenes y recursos estáticos
 └── README.md         # Documentación del repositorio
+.
+
+👤 Sobre el Autor
+Jefferson Antonio Arriola Reyes Estudiante de Ingeniería de Sistemas (VIII Ciclo) - Universidad Nacional de Ucayali
+
+Especializado en arquitectura de software, bases de datos relacionales complejas y desarrollo Full Stack.
+
+📍 Ubicación: Pucallpa, Perú
+
+💼 LinkedIn: Jefferson Antonio Arriola Reyes
+
+🐙 GitHub: @antoniotabo
+
+📧 Email: antonio.tabo@gmail.com
+
+📱 WhatsApp: +51 915 366 877
