@@ -49,7 +49,6 @@ Este no es solo un sitio estático; es una implementación técnica de diseño m
 /
 ├── index.html        # Estructura principal y contenido semántico
 ├── style.css         # Hoja de estilos (Variables, Grid, Responsive)
-├── assets/           # Imágenes y recursos estáticos
 └── README.md         # Documentación del repositorio
 .
 
