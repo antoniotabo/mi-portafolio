@@ -16,8 +16,10 @@ El sitio fue construido desde cero (Vanilla) para garantizar un rendimiento ópt
 
 ### 🔗 [https://antoniotabo.github.io/mi-portafolio/]
 
+##Experiencia Adicional Adjunto certificado unico laboral, emitido por el mismo Ministerio de Trabajo y promoción del empleo:
 
----
+---[CUL.pdf](https://github.com/user-attachments/files/24985529/CUL.pdf)
+
 
 ## 🎨 Características de Ingeniería Frontend
 
