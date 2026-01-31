@@ -16,14 +16,14 @@ El sitio fue construido desde cero (Vanilla) para garantizar un rendimiento ópt
 
 ### 🔗 [https://antoniotabo.github.io/mi-portafolio/]
 
-##Experiencia Adicional Adjunto certificado unico laboral, emitido por el mismo Ministerio de Trabajo y promoción del empleo:
+##Experiencia Adicional, emitido por el mismo Ministerio de Trabajo y promoción del empleo:
 
 <img width="899" height="236" alt="image" src="https://github.com/user-attachments/assets/18f8d978-3dbb-4731-9ed3-483be294fee1" />
 
-Verificalo QR:
+Verificalo QR:---<
 <img width="153" height="163" alt="image" src="https://github.com/user-attachments/assets/e0087d42-614c-41b4-87a0-edafae099bea" />
 
----[CUL.pdf](https://github.com/user-attachments/files/24985529/CUL.pdf)
+PDF Completo:>>---[CUL.pdf](https://github.com/user-attachments/files/24985529/CUL.pdf)
 
 
 ## 🎨 Características de Ingeniería Frontend
